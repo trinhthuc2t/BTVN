@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+  //Viết chương trình Java để tìm số Fibonacci thứ n, trong đó n được nhập từ bàn phím.
+
+
+
+
+ /* let x = parseInt(prompt("Enter number: "));
+  let a = 0, b = 1, count = 0;
+  for (let i = 0; count < x /!*i>-1*!/; i++) {
+    document.write(a + "<br/>")
+    let c = a + b;
+    a = b;
+    b = c;
+    count++;
+    /!*if (count == x) {
+        break;
+    }*!/
+  }*/
+
+
+/*
+  let x = prompt("Enter number:");
+  let a = 0;
+  let b = 1;
+  let countf = 0;
+  for (let i = 0; countf < x; i++) {
+    console.log(a)
+   let c = a + b;
+
+    a = b;
+    b = c;
+    countf++
+  }*/
+
+
+   //bai 3
+  let a=0;
+  let b=1;
+  let c= a+b;
+  let count=3;
+  let n= parseInt(prompt('nhap'));
+  if(n<1){
+      console.log('nothing');
+  }else if(n==1){
+      console.log(a);
+  }else if(n==2){
+      console.log(b);
+  }else if( n==3){
+      console.log(c);
+  }else{
+      for(;count<=n;count++){
+          a=b;
+          b=c;
+          c= a+b;
+      }
+      console.log(c);
+  }
+
+
+</script>
+</body>
+</html>
